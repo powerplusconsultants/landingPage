@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './Component/Header';
+import MainContent from './Component/MainContent';
+import Detail from './Component/Detail';
+import Footer from './Component/Footer';
+import { Routes, Route} from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 
 function App() {
+  const { state } = useLocation();
+  const { targetId } = state || {};
+  useEffect(() => {
+      const el = document.getElementById(targetId);
+      if (el) {
+      el.scrollIntoView();
+      }
+  }, [targetId]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header/>
+        <Routes>
+          <Route path="/" element={<MainContent />} />
+          <Route path="/Detail/:cardDetail" element={<Detail />} />
+        </Routes>
+      <Footer />
     </div>
   );
 }
