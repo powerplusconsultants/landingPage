@@ -1,4 +1,5 @@
 import Specialization from "./Specialization";
+import Portofolio from "./Portofolio";
 import Stage from "./Stage";
 import Profile from "./Profile";
 import bgAtas from "./../assets/frontBg.jpg";
@@ -30,6 +31,7 @@ const MainContent = () => {
             <div className="container">
                 <Specialization/>
                 <Stage />
+                <Portofolio />
                 <Profile />
             </div>
         </div>

@@ -45,12 +45,12 @@ const Profile = () => {
             <div className='row'>
                 <div className='col-12 mt-4'>
                     <textarea 
-                        className='mx-auto d-block' 
+                        className='mx-auto d-block form-control' 
                         id='message' 
                         value = {message}
                         onChange={handleInputChange}
-                        placeholder='Message' 
-                        style={{ width: '50%', minHeight : '200px'}} />
+                        placeholder='Get Connect With Us' 
+                        style={{ width: '50%', minHeight : '100px'}} />
                 </div>
             </div>
             <div className='row'>
