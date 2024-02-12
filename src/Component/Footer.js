@@ -52,10 +52,7 @@ const Footer = () => {
                                 </p>
                                 <p>
                                     <MDBIcon icon="envelope" className="me-3" />
-                                    project@powerplus.com
-                                </p>
-                                <p>
-                                    <MDBIcon icon="phone" className="me-3 mt-3" /> + 21 868 3712
+                                    project@powerplusconsultants.com
                                 </p>
                             </MDBCol>
                         </MDBRow>

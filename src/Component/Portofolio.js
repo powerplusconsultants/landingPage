@@ -1,11 +1,12 @@
 import CardPorto from "./CardPorto";
 import CFDImage from "./../assets/cfd.jpg";
 import SMCImage from "./../assets/pabrik.jpg";
-import RDLImage from "./../assets/rodalink.jpg";
-import UBMImage from "./../assets/ubm.jpg";
-import ChruchImage from "./../assets/church.jpg";
+import UBMImage from "./../assets/ubm.png";
+import ChruchImage from "./../assets/church.png";
 import MiningImage from "./../assets/mining.jpg";
-import WhsImage from "./../assets/warehouse.jpg";
+import WhsImage from "./../assets/dupak.png";
+import Rodalink from "./../assets/rodalink.png";
+import Meratus from "./../assets/meratus.png";
 
 const Portofolio = () => {
     return (
@@ -20,10 +21,10 @@ const Portofolio = () => {
                     <CardPorto src={CFDImage} title="CFD Analysis" text={"CFD Analysis BufferTank Chiller 40m3 and CFD Analysis PressureTank 50m3"}/>
                 </div>
                 <div className="col-lg-3 col-md-6">
-                    <CardPorto src={SMCImage} title="Workshop Platinum Ceramic" text={`1st floor, 148.000m2 <br /> PT. Surya Multi Cemerlang, Workshop Platinum Ceramic, Semambung – Sidoarjo`}/>
+                    <CardPorto src={SMCImage} title="Workshop Platinum Keramik" text={`1st floor, 148.000m2 <br /> PT. Surya Multi Cemerlang, Workshop Platinum Ceramic, Semambung – Sidoarjo`}/>
                 </div>
                 <div className="col-lg-3 col-md-6">
-                    <CardPorto src={RDLImage} title="RodaLink Showroom" text={`Bandung (3rd Storey, 400m2@fl <br /> Surabaya (4th Storey, 500m2@fl)`}/>
+                    <CardPorto src={Rodalink} title="RodaLink Showroom" text={`Bandung (3rd Storey, 400m2@fl <br /> Surabaya (4th Storey, 500m2@fl)`}/>
                 </div>
                 <div className="col-lg-3 col-md-6">
                     <CardPorto src={UBMImage} title="Universitas Bunda Mulia" text={"Universitas Bunda Mulia Housing – Ancol, Jakarta (12th Storey)"}/>
@@ -38,6 +39,9 @@ const Portofolio = () => {
                 </div>
                 <div className="col-lg-3 col-md-6">
                     <CardPorto src={WhsImage} title="Toko dan Gudang" text={`Toko dan Gudang Dupak – Surabaya (5th Storey)`}/>
+                </div>
+                <div className="col-lg-3 col-md-6">
+                    <CardPorto src={Meratus} title="Gudang dan Depot Container" text={`PT. Meratus Line <br /> Project warehouse and Depot Container at Cakung - Jakarta`}/>
                 </div>
             </div>
         </div>

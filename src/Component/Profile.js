@@ -12,7 +12,7 @@ const Profile = () => {
     const handleSendEmail = (e) => { 
         const encodedMessage = encodeURIComponent(message);
         const emailSubject = 'Contact Us Inquiry';
-        const emailTo = 'project@powerplus.com';
+        const emailTo = 'project@powerplusconsultants.com';
         const mailToLink = `mailto:${emailTo}?subject=${emailSubject}&body=${encodedMessage}`;
 
         window.location.href = mailToLink;
